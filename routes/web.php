@@ -28,8 +28,8 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Auth::routes(['register' => false]);
-// Auth::routes();
+// Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::prefix('admin')->group(function () {
 
